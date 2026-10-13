@@ -109,8 +109,3 @@ this induction, not a replacement for it.
 * The cycle is oriented; the unoriented case needs a different algorithm.
 * Only deterministic algorithms are covered; randomized and other models are out of scope.
 
-## References
-
-* R. Cole, U. Vishkin. *Deterministic coin tossing with applications to optimal parallel list ranking.* Information and Control, 1986.
-* N. Linial. *Locality in distributed graph algorithms.* SIAM J. Comput., 1992.
-* J. Suomela, L. Laurinharju. *Linial's lower bound made easy.* PODC 2014 (brief announcement).
