@@ -70,7 +70,10 @@ print(net.colors[:10], net.message_complexity)
   log\* n ≤ 5 for every n that fits in memory. The full table is in `results/exp1_scaling.csv`.
 * **Messages** are exactly n per Cole–Vishkin round and 2n per greedy round, so total = n·(4) + 2n·(3) = 10n, linear in n.
   Per node this is constant.
-* **Peak state** is 2·log₂(N) bits exactly (own color plus the successor's color in round 1, each needing log₂N bits since IDs run up to N−1), so it grows with log n, not with n.
+* **Peak state** is 2 × bits(N−1) bits — twice the bits needed to write the largest possible ID (own color
+  plus the successor's color in round 1). Since `exp1_scaling` always uses N = n³ with n a power of two,
+  N itself is a power of two there, so this happens to equal exactly 2·log₂(N) in the results table below.
+  For a general N it's 2·⌈log₂N⌉, not log₂N exactly.
 
 ### 2. Rounds vs size of the ID space (n = 1000 fixed)
 

@@ -111,6 +111,10 @@ def exp3_anonymous(rules_per_setting=300):
                 net = CycleNetwork(n, anonymous=True)
                 net.run_generic_rounds(rule, rounds)
                 identical += net.all_states_identical()
+                """`% 3` here is an arbitrary way to force the raw rule-output into 3 colors.
+                The choice doesn't matter: since all nodes are provably identical after
+                every round, applying ANY function to identical values still gives
+                identical values, so no projection could ever make this proper."""
                 proper += V.is_proper_coloring([s % 3 for s in net.colors])
             rows.append([n, rounds, rules_per_setting, identical, proper])
             print(
