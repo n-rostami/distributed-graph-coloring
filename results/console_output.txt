@@ -1,0 +1,46 @@
+== Experiment 1: scaling with n ==
+n=2^3  rounds=7.0 log*n=3 msgs=80 peak_state_bits=18
+n=2^4  rounds=7.0 log*n=3 msgs=160 peak_state_bits=24
+n=2^5  rounds=7.0 log*n=4 msgs=320 peak_state_bits=30
+n=2^6  rounds=7.0 log*n=4 msgs=640 peak_state_bits=36
+n=2^7  rounds=7.0 log*n=4 msgs=1280 peak_state_bits=42
+n=2^8  rounds=7.0 log*n=4 msgs=2560 peak_state_bits=48
+n=2^9  rounds=7.0 log*n=4 msgs=5120 peak_state_bits=54
+n=2^10 rounds=7.0 log*n=4 msgs=10240 peak_state_bits=60
+n=2^11 rounds=7.0 log*n=4 msgs=20480 peak_state_bits=66
+n=2^12 rounds=7.0 log*n=4 msgs=40960 peak_state_bits=72
+n=2^13 rounds=7.0 log*n=4 msgs=81920 peak_state_bits=78
+n=2^14 rounds=7.0 log*n=4 msgs=163840 peak_state_bits=84
+n=2^15 rounds=7.0 log*n=4 msgs=327680 peak_state_bits=90
+n=2^16 rounds=7.0 log*n=4 msgs=655360 peak_state_bits=96
+
+== Experiment 2: scaling with ID space ==
+N=2^(2^4 ) log*N=4 CV rounds=4 total rounds=7
+N=2^(2^5 ) log*N=5 CV rounds=4 total rounds=7
+N=2^(2^6 ) log*N=5 CV rounds=4 total rounds=7
+N=2^(2^7 ) log*N=5 CV rounds=4 total rounds=7
+N=2^(2^8 ) log*N=5 CV rounds=5 total rounds=8
+N=2^(2^9 ) log*N=5 CV rounds=5 total rounds=8
+N=2^(2^10) log*N=5 CV rounds=5 total rounds=8
+N=2^(2^11) log*N=5 CV rounds=5 total rounds=8
+N=2^(2^12) log*N=5 CV rounds=5 total rounds=8
+
+== Experiment 3: anonymous cycles ==
+anonymous n=3     rounds=1   rules=300 identical_states=300 proper_colorings=0
+anonymous n=3     rounds=5   rules=300 identical_states=300 proper_colorings=0
+anonymous n=3     rounds=20  rules=300 identical_states=300 proper_colorings=0
+anonymous n=10    rounds=1   rules=300 identical_states=300 proper_colorings=0
+anonymous n=10    rounds=5   rules=300 identical_states=300 proper_colorings=0
+anonymous n=10    rounds=20  rules=300 identical_states=300 proper_colorings=0
+anonymous n=100   rounds=1   rules=300 identical_states=300 proper_colorings=0
+anonymous n=100   rounds=5   rules=300 identical_states=300 proper_colorings=0
+anonymous n=100   rounds=20  rules=300 identical_states=300 proper_colorings=0
+anonymous n=1000  rounds=1   rules=300 identical_states=300 proper_colorings=0
+anonymous n=1000  rounds=5   rules=300 identical_states=300 proper_colorings=0
+anonymous n=1000  rounds=20  rules=300 identical_states=300 proper_colorings=0
+n=60 radius=0: distinct views anonymous=1, with IDs=60
+n=60 radius=1: distinct views anonymous=1, with IDs=60
+n=60 radius=2: distinct views anonymous=1, with IDs=60
+n=60 radius=5: distinct views anonymous=1, with IDs=60
+n=60 radius=10: distinct views anonymous=1, with IDs=60
+Cole–Vishkin on anonymous cycle -> SymmetryBreakingError
