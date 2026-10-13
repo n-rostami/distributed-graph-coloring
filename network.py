@@ -142,7 +142,7 @@ class CycleNetwork:
         same color are never adjacent, so they can recolor simultaneously.
         self.palette_size is passed to every round below as the bit-cost of a
         message, even though the live max color shrinks round over round; this
-        over-counts message_bits slightly in later rounds (documented in README)."""
+        over-counts message_bits slightly in later rounds."""
         for target in range(self.palette_size - 1, 2, -1):
             self._distribute_messages_greedy(self.palette_size)
             self._record_state()
