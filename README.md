@@ -14,7 +14,7 @@ utils.py       Tiny shared helper (bit-cost of a value), used by both node.py an
 experiments.py Runs all experiments, writes results/*.csv and results/*.png
 tests/         Unit tests (python -m unittest discover -s tests)
 results/       Output of the last run (csv, png, console log)
-requirements.txt, LICENSE, .gitignore
+requirements.txt, .gitignore
 ```
 
 ## Quick start
